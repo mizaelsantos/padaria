@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Formulário de Feedback</title>
+    </head>
+    <body>
+        <h1>Formulário de Feedback</h1>
+        <form name="feedback" action="feedback.php" method="get">
+            <section>
+                <div>
+                    <label form="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu Nome completo"required>
+                </div><br>
+
+                <div>
+                    <label form="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+                </div><br>
+            </section>
+
+            <section>
+                <label>Selecione produto/serviço 
+                    <select id="produtos" name="produtos" required>
+                        <option value="paes">🥖 Pães tradicionais</option>
+                        <option value="doces">🍰 Doces e bolos</option>
+                        <option value="salgados">🥐 Salgados</option>
+                        <option value="atendimento">👥 Atendimento</option>
+                        <option value="ambiente">🏠 Ambiente</option>
+                        <option value="precos">💲 Preços</option>
+                    </select>
+                </label>
+            </section><br>
+
+        <form>
+            <fieldset>
+                <legend>📝 Avaliação Geral</legend>
+
+                <label><input type="radio" name="avaliacao" value="excelente" required>🌟 Excelente</label><br>
+
+                <label><input type="radio" name="avaliacao" value="bom">👍 Bom</label><br>
+
+                <label><input type="radio" name="avaliacao" value="regular">😐 Regular</label><br>
+
+                <label><input type="radio" name="avaliacao" value="ruim">👎 Ruim</label>
+            </fieldset>
+
+        <br>
+
+        <label for="comentarios">✍️ Comentários:</label><br>
+        <textarea id="comentarios" name="comentarios" placeholder="Conte-nos o que achou..." rows="4" cols="50"></textarea>
+
+        <br><br>
+
+        <label>
+            <input type="checkbox" name="recomendaria">
+            👍 Recomendaria para amigos?
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="autoriza">
+            📰 Autoriza publicação do depoimento?
+        </label>
+
+        <br><br>
+        
+        <div>
+            <button type="submit">Enviar Avaliação</button>
+        </div>
+    
+    </body>
+
+</html>
