@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Contato Geral Zé da Manga Padaria</title>
+        <link rel="stylesheet" href="contato.css">
+    </head>
+    <body>
+        <h1>Contato Geral</h1>
+        <form action="contato.php" method="get">
+            <div>
+                <label form="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div>
+                <label form="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+            </div>
+
+            <div>
+                <label form="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone" pattern="\\d{10,}" placeholder="(DD) 00000-0000" required>
+            </div>
+            
+            <label> Assunto: 
+                <select id="assunto" name="assunto" required>
+                    <option value="bolo">ℹ️ Informações gerais</option>
+                    <option value="torta">⚠️ Reclamação</option>
+                    <option value="sugestão">💡 Sugestão</option>
+                    <option value="elogio">🌟 Elogio</option>
+                    <option value="pedido especial">🎂 Pedido especial</option>
+                    <option value="outros">❓ Outros</option>
+                </select>
+            </label>
+            
+
+            <div>
+                <label> Mensagem:
+                    <textarea required minlength="10"></textarea>
+                </label>
+            </div>
+        <br>
+        <button type="submit">Enviar</button>
+        </form>
+    </body>
+
+</html>

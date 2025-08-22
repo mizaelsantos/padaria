@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Contato Geral Zé da Manga Padaria</title>
+        <link rel="stylesheet" href="contato.css">
+    </head>
+    <body>
+        <h1>Cadastro</h1>
+        <form action="cadastro.php" method="get">
+            <div>
+                <label form="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div>
+                <label form="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+            </div>
+
+            <div>
+                <label form="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone" pattern="\\d{10,}" placeholder="(DD) 00000-0000" required>
+            </div>
+
+            <div>
+                <label form="date">Data de nascimento: </label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            
+            <div>
+                <label form="rua">Rua: </label>
+                <input type="text" id="rua" name="rua" required>
+            </div>
+
+            <div>
+                <label form="numero">Número: </label>
+                <input type="number" id="numero" name="numero" required>
+            </div>
+
+            <div>
+                <label form="bairro">Bairro: </label>
+                <input type="text" id="bairro" name="bairro" required>
+            </div>
+
+            <div>
+                <label form="cep">📮 CEP : </label>
+                <input type="text" id="cep" name="cep" required pattern="[0-9] {5} - [0-9] {3}" placeholder="Ex: 12345-678">
+            </div>
+
+            <div>
+                <label> Mensagem:
+                    <textarea required minlength="10"></textarea>
+                </label>
+            </div>
+        <br>
+        <button type="submit">Enviar</button>
+        </form>
+    </body>
+
+</html>
